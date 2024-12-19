@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patuwen Kopi</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="product.css
+  "
+    />
+    <link
+      rel="stylesheet"
+      href="index.css
+    "
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div class="row" id="main-row">
+      <h1><b>Product Tani</b></h1>
+      <div class="dropdown">
+        <button
+          class="btn dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          id="product-dropdown"
+        >
+          Kopi Dampit - Asem
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab1')"
+              >Kopi Dampit - Asem</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab2')"
+              >Kopi Dampit - Robusta</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab3')"
+              >Kopi Kotjoer - Arabika</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab4')"
+              >Kopi Kotjoer - Robusta</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab5')"
+              >Kopi Kotjoer - Arabika 2</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="changeTab('tab6')"
+              >Kopi Dem - Robusta</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="tab-content">
+        <!-- dampit asem -->
+        <div id="tab1" class="tab-pane" style="display: block">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/dampit-asem.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dampit robusta -->
+        <div id="tab2" class="tab-pane" style="display: none">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/dampit-robusta.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kotjoer arabika -->
+        <div id="tab3" class="tab-pane" style="display: none">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/kotjoer-arabika.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kotjoer robusta -->
+        <div id="tab4" class="tab-pane" style="display: none">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/kotjoer-robusta.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kotjoar arabika 2 -->
+        <div id="tab5" class="tab-pane" style="display: none">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/kotjoer-arabika-2.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- dem robusta -->
+        <div id="tab6" class="tab-pane" style="display: none">
+          <div class="row">
+            <div class="col">
+              <div class="carousel slide" id="product-carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./Image/product-page/dem-robusta.png"
+                      class="d-block product-pic"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Arabica | Darkroast</h5>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#product-carousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6"
+                  ></button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col" id="col-right">
+              <div class="row">
+                <div class="col-md-9" id="product-detail">
+                  <div class="row" id="product-detail-name">
+                    <button type="button" class="active">Robusta</button>
+                    <button type="button">Arabica</button>
+                  </div>
+                  <div class="row" id="product-detail-desc">
+                    <h3>ROBUSTA</h3>
+                    <p>
+                      Kopi tubruk pilihan dari biji kopi terbaik yang
+                      <br />ditanam di ketinggian 700mdpl.
+                    </p>
+                  </div>
+                  <div class="row" id="product-detail-type">
+                    <p class="instruction">Pilih Jenis Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Medium</button>
+                      <button type="button">Premium</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-shape">
+                    <p class="instruction">Pilih Bentuk Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">Bubuk</button>
+                      <button type="button">Toples</button>
+                      <button type="button">Roastedbean</button>
+                    </div>
+                  </div>
+                  <div class="row" id="product-detail-qty">
+                    <p class="instruction">Pilih Jumlah Robusta</p>
+                    <div class="detail-btns">
+                      <button type="button" class="active">200 gr</button>
+                      <button type="button">500 gr</button>
+                      <button type="button">1 Kg</button>
+                    </div>
+                  </div>
+                  <div class="row" id="payment">
+                    <p class="instruction">Pilih Metode Pembayaran</p>
+                    <div class="dropdown">
+                      <button
+                        class="btn dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        id="payment-dropdown"
+                      >
+                        Pilih pembayaran
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OVO</a></li>
+                        <li><a class="dropdown-item" href="#">GoPay</a></li>
+                        <li><a class="dropdown-item" href="#">DANA</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="row" id="total">
+                    <p class="instruction">Total Pembayaran</p>
+                    <div class="detail-btns">
+                      <h3>Rp 25.000</h3>
+                      <button type="button" class="active">
+                        Pesan Sekarang
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+    <div id="float"></div>
+
+    <script>
+      function changeTab(tabId) {
+        // Sembunyikan semua tab
+        const tabs = document.querySelectorAll(".tab-pane");
+        tabs.forEach((tab) => {
+          tab.style.display = "none";
+        });
+
+        // Tampilkan tab yang dipilih
+        const selectedTab = document.getElementById(tabId);
+        if (selectedTab) {
+          selectedTab.style.display = "block";
+        }
+
+        // Perbarui teks tombol dropdown
+        const dropdownButton = document.getElementById("product-dropdown");
+        const selectedText = document.querySelector(
+          `[href="#"][onclick="changeTab('${tabId}')"]`
+        ).textContent;
+        dropdownButton.textContent = selectedText;
+      }
+
+      const dropdownMenuButton = document.getElementById("dropdownMenuButton");
+      document.querySelectorAll(".dropdown-item").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          event.preventDefault();
+
+          // Update dropdown button label
+          dropdownMenuButton.textContent = item.textContent;
+
+          document.querySelectorAll(".tab-pane").forEach((tab) => {
+            tab.classList.remove("active");
+          });
+
+          const target = item.getAttribute("data-target");
+
+          document.getElementById(target).classList.add("active");
+        });
+      });
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Memuat navbar.html
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+
+      // Memuat footer.html
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+
+      fetch("float-icons.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("float").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

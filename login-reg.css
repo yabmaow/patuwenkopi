@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+    background-color: #FAF9EE;
+  }
+  
+  .login-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.75);
+
+  }
+  
+  .input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin-bottom: 15px;
+  }
+
+  .input-box input{
+    outline: none;
+    background-color: transparent;
+    border: 1.5px solid darkgray;
+    padding: 1em;
+    border-radius: 10px;
+  }
+  
+
+  .remember input[type="checkbox"]{
+    display: none;
+  }
+
+  .remember input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #000;
+    background-color: transparent;
+    border-radius: 5px;
+    vertical-align: middle; 
+    margin-right: 10px; 
+  }
+  
+
+  .remember input[type="checkbox"]:checked + label::before {
+    background-color: #7F5E32;
+  }
+  
+
+  .remember label {
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .remember{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sign-in input[type="submit"]{
+    width: 100%;
+    border-radius: 5px;
+    padding-block: 10px;
+    border: none;
+    background-color: white;
+    margin-block: 15px;
+  }
+
+  .sign-in-google{
+    background-color: transparent;
+    width: 100%;
+    border: 1.5px solid black;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 3px;
+    gap: 5px;
+  }
+
+  .sign-in-google:hover{
+    cursor: pointer;
+  }
+
+  .login-image {
+    width: 50%;
+    background: url('login-img.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .term-policy a{
+    color: black;
+    font-weight: bold;
+  }
+
+  .password-label{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .password-label a{
+    text-decoration: none;
+    color: #4D4D4D;
+  }

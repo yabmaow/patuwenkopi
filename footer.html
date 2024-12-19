@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .footer {
+        height: 60vh;
+        background-image: url("./Image/footer-background.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        display: flex;
+        justify-content: center;
+        padding-block: 3em;
+        text-align: left;
+        align-items: center;
+        padding-inline: 5em;
+      }
+
+      .footer-title {
+        font-weight: bold;
+        color: white;
+        padding-bottom: 8px;
+      }
+
+      .footer-content {
+        padding: 0;
+      }
+
+      .footer-content li {
+        list-style-type: none;
+        padding: 0;
+        padding-bottom: 8px;
+      }
+
+      .footer-content a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .socmed-group {
+        gap: 14px;
+        display: flex;
+      }
+
+      .socmed-group a {
+        color: white;
+        font-size: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img
+              style="padding-bottom: 22px"
+              src="./Image/footer_logo.svg"
+              alt=""
+            />
+            <p
+              style="
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 100;
+              "
+            >
+              ©2024 pointcoffee.id. ALL RIGHTS RESERVED.
+            </p>
+          </div>
+          <div class="col-2">
+            <h5 class="footer-title">Products</h5>
+            <ul class="footer-content">
+              <li><a href="">Kopi Kucur</a></li>
+              <li><a href="">Kopi Dampit</a></li>
+              <li><a href="">Kopi Jengger</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5 class="footer-title">Informations</h5>
+            <ul class="footer-content">
+              <li><a href="">About us</a></li>
+              <li><a href="">Product</a></li>
+              <li><a href="">Profile Kelompok Petani</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-3">
+            <h5 class="footer-title">Contact Us</h5>
+            <p style="color: white; margin: 0">patuwenkopi@gmail.com</p>
+            <p style="color: white; margin: 0">click here:</p>
+            <div class="socmed-group">
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
